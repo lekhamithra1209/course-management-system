@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | StudySync</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<header class="header">
+  <a class="logo" href="index.html">🎓 StudySync</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+  <nav class="nav" id="nav">
+    <a href="index.html" data-p="home">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="dashboard.html#courses">Courses</a>
+    <a href="login.html" data-p="login" data-auth="out">Login</a>
+    <a href="register.html" data-p="register" data-auth="out">Register</a>
+    <a href="dashboard.html" data-p="dashboard" data-auth="in">Dashboard</a>
+    <a id="logoutBtn" data-auth="in">Logout</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="about">
+    <div>
+      <h1>Learn Today,<br>Build Your<br>Tomorrow 💜</h1>
+      <p>StudySync is a student learning platform that helps you explore courses, track your progress and achieve your goals — all in one place.</p>
+      <a class="btn" href="register.html">Get Started</a>
+      <a class="btn outline" href="#features">Learn More</a>
+    </div>
+    <div>
+      <div class="art">👩‍💻🐱📚</div>
+      <span class="note">good things take time</span>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature"><div class="icon">📖</div><h3>Wide Range of Courses</h3><p>Explore courses across various domains and build new skills.</p></div>
+    <div class="feature"><div class="icon">📈</div><h3>Track Your Progress</h3><p>Keep an eye on your learning journey and achievements.</p></div>
+    <div class="feature"><div class="icon">👥</div><h3>Student Friendly</h3><p>Simple, clean and easy to use for every student.</p></div>
+    <div class="feature"><div class="icon">⭐</div><h3>Achieve Your Goals</h3><p>Gain knowledge and create a better future.</p></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span>🎓 StudySync</span>
+  <span>© 2026 StudySync. All rights reserved.</span>
+  <nav><a href="index.html">Home</a><a href="index.html#about">About</a><a href="dashboard.html#courses">Courses</a></nav>
+</footer>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

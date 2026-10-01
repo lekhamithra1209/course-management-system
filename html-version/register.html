@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register | StudySync</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="register">
+<header class="header">
+  <a class="logo" href="index.html">🎓 StudySync</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+  <nav class="nav" id="nav">
+    <a href="index.html" data-p="home">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="dashboard.html#courses">Courses</a>
+    <a href="login.html" data-p="login" data-auth="out">Login</a>
+    <a href="register.html" data-p="register" data-auth="out">Register</a>
+    <a href="dashboard.html" data-p="dashboard" data-auth="in">Dashboard</a>
+    <a id="logoutBtn" data-auth="in">Logout</a>
+  </nav>
+</header>
+
+<main class="auth">
+  <div class="welcome script">Join Our<br>Learning<br>Community<small>✏️📚</small></div>
+
+  <form class="card" id="registerForm" novalidate>
+    <h2>Register</h2>
+    <p class="sub">Fill in your student details to get started.</p>
+    <div id="formMsg"></div>
+
+    <div class="grid2">
+      <div class="field"><label for="name">Full Name</label><input id="name" name="name" data-rule="name"><small class="msg"></small></div>
+      <div class="field"><label for="studentId">Student ID</label><input id="studentId" name="studentId" data-rule="studentId" placeholder="PR2025001"><small class="msg"></small></div>
+      <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" data-rule="email"><small class="msg"></small></div>
+      <div class="field"><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" data-rule="phone"><small class="msg"></small></div>
+      <div class="field"><label for="course">Course</label>
+        <select id="course" name="course" data-rule="required">
+          <option value="">Select course</option><option>B.Sc. Computer Science</option><option>B.Tech IT</option><option>BCA</option><option>MCA</option>
+        </select><small class="msg"></small></div>
+      <div class="field"><label for="year">Year</label>
+        <select id="year" name="year" data-rule="required">
+          <option value="">Select year</option><option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option>
+        </select><small class="msg"></small></div>
+      <div class="field"><label for="rpassword">Password</label><input id="rpassword" name="password" type="password" data-rule="password"><small class="msg"></small></div>
+      <div class="field"><label for="confirm">Confirm Password</label><input id="confirm" name="confirm" type="password" data-rule="confirm"><small class="msg"></small></div>
+    </div>
+
+    <button class="btn block" type="submit">Register</button>
+    <p class="switch">Already have an account? <a href="login.html">Login</a></p>
+  </form>
+</main>
+
+<footer class="footer">
+  <span>🎓 StudySync</span>
+  <span>© 2026 StudySync. All rights reserved.</span>
+  <nav><a href="index.html">Home</a><a href="index.html#about">About</a><a href="dashboard.html#courses">Courses</a></nav>
+</footer>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
